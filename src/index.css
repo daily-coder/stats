@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* active state links */
+.active {
+  @apply bg-blue-800;
+}
