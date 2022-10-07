@@ -9,3 +9,20 @@ Have a look at the [demo](https://daily-coder.github.io/stats/) to see what the 
 ## Tools
 
 React, Tailwind CSS, Jest, Mock Service Worker 
+
+
+<br />
+
+## Categories Of CSS Stats
+
+* Overview
+  * File Size
+  * Gzip File Size
+  * Rules
+  * Declarations
+  * Selectors
+  * Properties
+  * Id
+  * Class
+  * Pseudo Class
+  * Pseudo Element
