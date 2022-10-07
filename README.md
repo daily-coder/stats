@@ -35,3 +35,10 @@ React, Tailwind CSS, Jest, Mock Service Worker
   * Height
   * Min-height
   * Max-height
+* Position
+  * Position
+  * Top
+  * Right
+  * Bottom
+  * Left
+  * Z-index
