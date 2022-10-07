@@ -42,3 +42,14 @@ React, Tailwind CSS, Jest, Mock Service Worker
   * Bottom
   * Left
   * Z-index
+* Spacing
+  * Margin
+  * Margin-top
+  * Margin-right
+  * Margin-bottom
+  * Margin-left
+  * Padding
+  * Padding-top
+  * Padding-right
+  * Padding-bottom
+  * Padding-left
