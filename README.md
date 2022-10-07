@@ -71,3 +71,5 @@ React, Tailwind CSS, Jest, Mock Service Worker
   * Border-color
   * Border-radius
   * Box-shadow
+* Color
+* Background-color
