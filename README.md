@@ -73,3 +73,6 @@ React, Tailwind CSS, Jest, Mock Service Worker
   * Box-shadow
 * Color
 * Background-color
+
+Credits: 
+  Special thanks to [cssstats.com](https://cssstats.com/) for providing API.
