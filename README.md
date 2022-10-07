@@ -53,3 +53,14 @@ React, Tailwind CSS, Jest, Mock Service Worker
   * Padding-right
   * Padding-bottom
   * Padding-left
+* Typography
+  * Font-size
+  * Font-family
+  * Font-weight
+  * Font-style
+  * Line-height
+  * Text-align
+  * Letter-spacing
+  * Text-decoration
+  * Text-transform
+  * Text-shadow
