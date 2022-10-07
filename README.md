@@ -64,3 +64,10 @@ React, Tailwind CSS, Jest, Mock Service Worker
   * Text-decoration
   * Text-transform
   * Text-shadow
+* Border
+  * Border
+  * Border-width
+  * Border-style
+  * Border-color
+  * Border-radius
+  * Box-shadow
