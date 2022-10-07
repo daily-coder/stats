@@ -1,3 +1,5 @@
-# Stats.com
+# CSS STATS APP
 
-Simple website to analyze CSS.
+A React application that analyses CSS and provides statistics to optimize a website.
+
+Have a look at the [demo](https://daily-coder.github.io/stats/) to see what the app can do.
