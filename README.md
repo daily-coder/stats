@@ -80,5 +80,29 @@ Have a look at the [demo](https://daily-coder.github.io/stats/) to see what the 
 * Color
 * Background-color
 
+<br />
+
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+<br />
+
+### Prerequisites
+
+The following software is required to be installed on your system:
+
+* Node 8.x
+* Npm 3.x
+
+Type the following commands in the terminal to verify your node and npm versions
+
+```bash
+node -v
+npm -v
+```
+
+<br />
+
 Credits: 
   Special thanks to [cssstats.com](https://cssstats.com/) for providing API.
