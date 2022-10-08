@@ -104,5 +104,24 @@ npm -v
 
 <br />
 
+### Install
+
+Follow the following steps to get development environment running.
+
+* Clone _'stats'_ repository from GitHub
+
+  ```bash
+  git clone https://github.com/daily-coder/stats.git
+  ```
+
+* Install node modules
+
+   ```bash
+   npm install
+   ```
+
+
+<br />
+
 Credits: 
   Special thanks to [cssstats.com](https://cssstats.com/) for providing API.
