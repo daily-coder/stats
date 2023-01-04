@@ -48,6 +48,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "gh-pages": "^4.0.0",
     "husky": "^8.0.3",
+    "lint-staged": "^13.1.0",
     "msw": "^0.47.3",
     "postcss": "^8.4.16",
     "prettier": "^2.7.1",
