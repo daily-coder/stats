@@ -1,4 +1,4 @@
 module.exports = {
-  "*.css": "prettier --check",
-  "*.js": 'eslint'
+  "*.{md,yml,css,html}": "prettier --check",
+  "*.js": "eslint",
 };
