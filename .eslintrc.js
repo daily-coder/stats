@@ -16,12 +16,5 @@ module.exports = {
   rules: {
     "no-console": "warn",
     "import/first": "error",
-    "linebreak-style": ["error", "windows"],
-    "prettier/prettier": [
-      "error",
-      {
-        endOfLine: "auto",
-      },
-    ],
   },
 };

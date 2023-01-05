@@ -18,7 +18,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
@@ -39,11 +40,15 @@
     ]
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.4.0",
+    "@commitlint/config-conventional": "^17.4.0",
     "autoprefixer": "^10.4.8",
     "bootstrap-icons": "^1.9.1",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "gh-pages": "^4.0.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.0",
     "msw": "^0.47.3",
     "postcss": "^8.4.16",
     "prettier": "^2.7.1",
