@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 import { DataContext } from "../../context/DataContext";
 
-function Searchbar() {
+function SearchBar() {
   const { setCssData, setLoading, setError } = useContext(DataContext);
   // default value would be google.com
   const [searchValue, setSearchValue] = useState("google.com");
@@ -89,4 +89,4 @@ function Searchbar() {
   );
 }
 
-export default Searchbar;
+export default SearchBar;

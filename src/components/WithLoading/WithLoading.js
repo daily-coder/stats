@@ -1,6 +1,6 @@
 import { useContext } from "react";
 
-import { DataContext } from "../context/DataContext";
+import { DataContext } from "../../context/DataContext";
 
 import Error from "./Error";
 import Loading from "./Loading";

@@ -1,10 +1,10 @@
 import { useContext } from "react";
 
-import { DataContext } from "../context/DataContext";
+import { DataContext } from "../../context/DataContext";
 
 import SideBarLink from "./SideBarLink";
 
-function Sidebar() {
+function SideBar() {
   const { menuExpand, setMenuExpand } = useContext(DataContext);
 
   function hideMenu() {
@@ -46,4 +46,4 @@ function Sidebar() {
   );
 }
 
-export default Sidebar;
+export default SideBar;

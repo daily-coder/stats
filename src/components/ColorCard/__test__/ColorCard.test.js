@@ -1,6 +1,6 @@
 import { screen, render } from "@testing-library/react";
 
-import ColorCard from "./ColorCard";
+import ColorCard from "../ColorCard";
 
 describe("ColorCard", () => {
   it("should apply style color with props color value", () => {

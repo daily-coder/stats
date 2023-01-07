@@ -1,8 +1,8 @@
 import { useContext } from "react";
 
-import { DataContext } from "../context/DataContext";
+import { DataContext } from "../../context/DataContext";
 
-function Menubtn() {
+function MenuBtn() {
   const { menuExpand, setMenuExpand } = useContext(DataContext);
 
   function toggleMenu() {
@@ -34,4 +34,4 @@ function Menubtn() {
   );
 }
 
-export default Menubtn;
+export default MenuBtn;
