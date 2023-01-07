@@ -1,5 +1,7 @@
 import { useContext } from "react";
+
 import { DataContext } from "../context/DataContext";
+
 import SideBarLink from "./SideBarLink";
 
 function Sidebar() {

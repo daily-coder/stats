@@ -1,6 +1,6 @@
-import { useRef } from "react";
-import { useContext, useEffect, useState } from "react";
+import { useRef, useContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+
 import { DataContext } from "../../context/DataContext";
 
 function Searchbar() {

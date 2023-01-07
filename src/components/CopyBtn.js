@@ -1,7 +1,6 @@
-import { useEffect } from "react";
-import { useState } from "react";
-import { CopyToClipboard } from "react-copy-to-clipboard";
 import propTypes from "prop-types";
+import { useEffect, useState } from "react";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 
 function CopyBtn({ text }) {
   const [copied, setCopied] = useState(false);

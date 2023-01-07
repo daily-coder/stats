@@ -1,7 +1,8 @@
-import BgCard from "../components/BgCard/BgCard";
 import { useContext } from "react";
-import { DataContext } from "../context/DataContext";
+
+import BgCard from "../components/BgCard/BgCard";
 import WithLoading from "../components/WithLoading";
+import { DataContext } from "../context/DataContext";
 
 function BgColor() {
   const { cssData } = useContext(DataContext);

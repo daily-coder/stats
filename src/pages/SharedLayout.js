@@ -1,7 +1,8 @@
-import Header from "../components/Header";
-import { Outlet } from "react-router-dom";
-import Sidebar from "../components/Sidebar";
 import { useContext } from "react";
+import { Outlet } from "react-router-dom";
+
+import Header from "../components/Header";
+import Sidebar from "../components/Sidebar";
 import { DataContext } from "../context/DataContext";
 
 function SharedLayout() {
