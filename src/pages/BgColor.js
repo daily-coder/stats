@@ -1,6 +1,6 @@
 import { useContext } from "react";
 
-import BgCard from "../components/BgCard/BgCard";
+import BgCard from "../components/BgCard";
 import WithLoading from "../components/WithLoading";
 import { DataContext } from "../context/DataContext";
 

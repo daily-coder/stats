@@ -1,5 +1,5 @@
-import Menubtn from "./Menubtn";
-import Searchbar from "./SearchBar/Searchbar";
+import Menubtn from "./MenuBtn";
+import Searchbar from "./SearchBar";
 import ToggleThemeBtn from "./ToggleThemeBtn";
 
 function Header() {

@@ -1,6 +1,6 @@
 import { useContext } from "react";
 
-import ColorCard from "../components/ColorCard/ColorCard";
+import ColorCard from "../components/ColorCard";
 import WithLoading from "../components/WithLoading";
 import { DataContext } from "../context/DataContext";
 

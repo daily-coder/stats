@@ -2,7 +2,7 @@ import "./matchMedia.js";
 
 import { fireEvent, render, screen } from "@testing-library/react";
 
-import App from "./App";
+import App from "../App";
 
 describe("App", () => {
   // warning: to avoid leaking history into other tests reset it after each test.

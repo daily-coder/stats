@@ -1,6 +1,6 @@
 import { screen, render } from "@testing-library/react";
 
-import BgCard from "./BgCard";
+import BgCard from "../BgCard";
 
 describe("BgCard", () => {
   it("should apply style background-color with props bgColor value", () => {
