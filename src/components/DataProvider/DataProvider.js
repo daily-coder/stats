@@ -1,6 +1,14 @@
-import { createContext, useState } from "react";
+import { createContext, useState, useContext } from "react";
 
-export const DataContext = createContext(null);
+const DataContext = createContext(null);
+
+export function useDataContext() {
+  const context = useContext(DataContext);
+  if (!context) {
+    throw new Error("useDataContext should be used within DataProvider");
+  }
+  return context;
+}
 
 function DataProvider({ children }) {
   // On initial page load we will show menu if window width is greater than 768px and

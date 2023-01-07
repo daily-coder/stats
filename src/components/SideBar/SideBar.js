@@ -1,11 +1,9 @@
-import { useContext } from "react";
-
-import { DataContext } from "../../context/DataContext";
+import { useDataContext } from "../DataProvider";
 
 import SideBarLink from "./SideBarLink";
 
 function SideBar() {
-  const { menuExpand, setMenuExpand } = useContext(DataContext);
+  const { menuExpand, setMenuExpand } = useDataContext();
 
   function hideMenu() {
     if (window.innerWidth > 768) return;

@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { BrowserRouter } from "react-router-dom";
 
-import DataProvider from "../../../context/DataContext";
+import DataProvider from "../../DataProvider";
 import SearchBar from "../SearchBar";
 
 function MockSearchBar() {

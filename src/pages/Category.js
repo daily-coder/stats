@@ -1,14 +1,13 @@
-import { useContext } from "react";
 import { useParams } from "react-router-dom";
 
 import Card from "../components/Card";
+import { useDataContext } from "../components/DataProvider";
 import WithLoading from "../components/WithLoading";
-import { DataContext } from "../context/DataContext";
 import PROPERTY_GROUP from "../property-group";
 
 function Category() {
   const { id } = useParams();
-  const { cssData } = useContext(DataContext);
+  const { cssData } = useDataContext();
   const { properties } = cssData.stats.declarations;
   const categoryProperties = PROPERTY_GROUP[id];
 

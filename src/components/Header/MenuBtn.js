@@ -1,9 +1,7 @@
-import { useContext } from "react";
-
-import { DataContext } from "../../context/DataContext";
+import { useDataContext } from "../DataProvider";
 
 function MenuBtn() {
-  const { menuExpand, setMenuExpand } = useContext(DataContext);
+  const { menuExpand, setMenuExpand } = useDataContext();
 
   function toggleMenu() {
     setMenuExpand((prevMenuExpand) => !prevMenuExpand);
