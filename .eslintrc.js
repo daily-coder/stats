@@ -4,7 +4,12 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: ["react-app", "eslint:recommended", "plugin:prettier/recommended"],
+  extends: [
+    "react-app",
+    "eslint:recommended",
+    "plugin:import/recommended",
+    "plugin:prettier/recommended",
+  ],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -16,5 +21,15 @@ module.exports = {
   rules: {
     "no-console": "warn",
     "import/first": "error",
+    "import/newline-after-import": ["error", { count: 1 }],
+    "import/order": [
+      "error",
+      {
+        "newlines-between": "always",
+        alphabetize: {
+          order: "asc",
+        },
+      },
+    ],
   },
 };
