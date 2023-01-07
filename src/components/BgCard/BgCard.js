@@ -1,5 +1,6 @@
-import CopyBtn from "../CopyBtn";
 import propTypes from "prop-types";
+
+import CopyBtn from "../CopyBtn";
 
 function BgCard({ bgColor }) {
   return (

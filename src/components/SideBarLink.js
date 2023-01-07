@@ -1,5 +1,5 @@
-import { NavLink } from "react-router-dom";
 import propTypes from "prop-types";
+import { NavLink } from "react-router-dom";
 
 function SideBarLink({ to, linkText, hideMenu }) {
   return (

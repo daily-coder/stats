@@ -1,4 +1,5 @@
 import { screen, render } from "@testing-library/react";
+
 import ColorCard from "./ColorCard";
 
 describe("ColorCard", () => {

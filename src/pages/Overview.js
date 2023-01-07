@@ -1,7 +1,8 @@
 import { useContext } from "react";
+
 import Card from "../components/Card";
-import { DataContext } from "../context/DataContext";
 import WithLoading from "../components/WithLoading";
+import { DataContext } from "../context/DataContext";
 
 function Overview() {
   const { cssData } = useContext(DataContext);
