@@ -1,9 +1,7 @@
-import { useContext } from "react";
-
-import { ThemeContext } from "../../context/ThemeContext";
+import { useThemeContext } from "../ThemeProvider";
 
 function ToggleThemeBtn() {
-  const { darkTheme, setDarkTheme } = useContext(ThemeContext);
+  const { darkTheme, setDarkTheme } = useThemeContext();
 
   function toggleTheme() {
     setDarkTheme((prevDarkTheme) => !prevDarkTheme);

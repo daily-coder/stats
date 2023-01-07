@@ -1,12 +1,11 @@
-import { useContext } from "react";
 import { Outlet } from "react-router-dom";
 
+import { useDataContext } from "../components/DataProvider";
 import Header from "../components/Header";
 import Sidebar from "../components/SideBar";
-import { DataContext } from "../context/DataContext";
 
 function SharedLayout() {
-  const { loading, error } = useContext(DataContext);
+  const { loading, error } = useDataContext();
 
   return (
     <div className="flex h-screen flex-col">

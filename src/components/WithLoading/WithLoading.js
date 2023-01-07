@@ -1,13 +1,11 @@
-import { useContext } from "react";
-
-import { DataContext } from "../../context/DataContext";
+import { useDataContext } from "../DataProvider";
 
 import Error from "./Error";
 import Loading from "./Loading";
 
 function WithLoading(WrappedComponent) {
   return function EnhancedComponent() {
-    const { error, loading, cssData } = useContext(DataContext);
+    const { error, loading, cssData } = useDataContext();
 
     return (
       <>

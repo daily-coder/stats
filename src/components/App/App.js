@@ -1,7 +1,5 @@
 import { HashRouter, Route, Routes } from "react-router-dom";
 
-import DataProvider from "../../context/DataContext";
-import ThemeProvider from "../../context/ThemeContext";
 import BgColor from "../../pages/BgColor";
 import Category from "../../pages/Category";
 import Color from "../../pages/Color";
@@ -9,6 +7,8 @@ import Home from "../../pages/Home";
 import NotFound from "../../pages/NotFound";
 import Overview from "../../pages/Overview";
 import SharedLayout from "../../pages/SharedLayout";
+import DataProvider from "../DataProvider";
+import ThemeProvider from "../ThemeProvider";
 
 function App() {
   return (

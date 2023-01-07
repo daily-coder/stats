@@ -1,11 +1,9 @@
-import { useContext } from "react";
-
 import BgCard from "../components/BgCard";
+import { useDataContext } from "../components/DataProvider";
 import WithLoading from "../components/WithLoading";
-import { DataContext } from "../context/DataContext";
 
 function BgColor() {
-  const { cssData } = useContext(DataContext);
+  const { cssData } = useDataContext();
   // "background-color" property points to array of background-color values.
   const { "background-color": bgColors } =
     cssData.stats.declarations.properties;

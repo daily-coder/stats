@@ -1,10 +1,10 @@
-import { useRef, useContext, useEffect, useState } from "react";
+import { useRef, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-import { DataContext } from "../../context/DataContext";
+import { useDataContext } from "../DataProvider";
 
 function SearchBar() {
-  const { setCssData, setLoading, setError } = useContext(DataContext);
+  const { setCssData, setLoading, setError } = useDataContext();
   // default value would be google.com
   const [searchValue, setSearchValue] = useState("google.com");
   // we will fetch new data whenever urlCount increments
