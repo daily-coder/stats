@@ -20,6 +20,7 @@ module.exports = {
   plugins: ["react"],
   rules: {
     "no-console": "warn",
+    "import/export": "off",
     "import/first": "error",
     "import/newline-after-import": ["error", { count: 1 }],
     "import/order": [
