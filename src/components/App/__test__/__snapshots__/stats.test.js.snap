@@ -19,3 +19,23 @@ exports[`display error message if url is empty 1`] = `
   </ol>
 </div>
 `;
+
+exports[`display error message if url is invalid 1`] = `
+<div
+  role="alert"
+>
+  <h2>
+    There was an Error.
+  </h2>
+  <ol
+    class="list-inside list-decimal"
+  >
+    <li>
+      Check your internet connection.
+    </li>
+    <li>
+      Make sure url address is correct.
+    </li>
+  </ol>
+</div>
+`;

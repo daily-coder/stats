@@ -59,3 +59,16 @@ test("display error message if url is empty", async () => {
 
   expect(screen.getByRole("alert")).toMatchSnapshot();
 });
+
+test("display error message if url is invalid", async () => {
+  render(<App />, { route: "#/category/overview" });
+
+  const searchBar = screen.getByRole("searchbox");
+
+  await userEvent.clear(searchBar);
+  await userEvent.type(searchBar, "abcdefgh");
+  await userEvent.click(screen.getByRole("button", { name: /search button/i }));
+  await waitForElementToBeRemoved(screen.getByLabelText(/loading/i));
+
+  expect(screen.getByRole("alert")).toMatchSnapshot();
+});
