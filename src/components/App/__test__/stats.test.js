@@ -72,3 +72,18 @@ test("display error message if url is invalid", async () => {
 
   expect(screen.getByRole("alert")).toMatchSnapshot();
 });
+
+test("render new stats on pressing enter key", async () => {
+  render(<App />, { route: "#/category/overview" });
+
+  const searchBar = screen.getByRole("searchbox");
+
+  await userEvent.clear(searchBar);
+  await userEvent.type(searchBar, "github.com");
+  await userEvent.keyboard("{Enter}");
+  await waitForElementToBeRemoved(screen.getByLabelText(/loading/i));
+
+  expect(
+    screen.getByRole("heading", { name: /file size/i })
+  ).toBeInTheDocument();
+});

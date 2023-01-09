@@ -57,7 +57,7 @@ function SearchBar() {
   }
 
   function loadCssDataOnEnter(ev) {
-    if (ev.target.value && ev.keyCode === 13) {
+    if (ev.target.value && ev.key === "Enter") {
       setUrlCount((prevUrlCount) => prevUrlCount + 1);
     }
   }
