@@ -23,7 +23,21 @@ test("navigate to overview page on clicking get started button", async () => {
   render(<App />);
 
   await userEvent.click(screen.getByRole("link", { name: /get started/i }));
+  await waitForElementToBeRemoved(screen.getByLabelText(/loading/i));
 
+  expect(
+    screen.getByRole("heading", { name: /file size/i })
+  ).toBeInTheDocument();
+});
+
+test("render new stats data on clicking search button", async () => {
+  render(<App />, { route: "#/category/overview" });
+
+  const searchBar = screen.getByRole("searchbox");
+
+  await userEvent.clear(searchBar);
+  await userEvent.type(searchBar, "github.com");
+  await userEvent.click(screen.getByRole("button", { name: /search button/i }));
   await waitForElementToBeRemoved(screen.getByLabelText(/loading/i));
 
   expect(
