@@ -19,6 +19,7 @@ function SearchBar() {
   useEffect(() => {
     if (!searchValue) {
       setError(true);
+      setLoading(false);
       return;
     }
 
