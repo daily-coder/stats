@@ -44,3 +44,18 @@ test("render new stats data on clicking search button", async () => {
     screen.getByRole("heading", { name: /file size/i })
   ).toBeInTheDocument();
 });
+
+test("display error message if url is empty", async () => {
+  render(<App />, { route: "#/category/overview" });
+
+  await userEvent.clear(screen.getByRole("searchbox"));
+  await userEvent.click(screen.getByRole("button", { name: /search button/i }));
+
+  // loading animation is not triggered if search value is empty and search button
+  // is clicked. Instead error message is immediately displayed.
+
+  // error message is big as it also provides some suggestions for user
+  // check snapshot to know more about message.
+
+  expect(screen.getByRole("alert")).toMatchSnapshot();
+});

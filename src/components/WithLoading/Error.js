@@ -1,6 +1,6 @@
 function Error() {
   return (
-    <div>
+    <div role="alert">
       <h2>There was an Error.</h2>
       <ol className="list-inside list-decimal">
         <li>Check your internet connection.</li>
