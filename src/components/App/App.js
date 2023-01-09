@@ -1,4 +1,4 @@
-import { HashRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 import BgColor from "../../pages/BgColor";
 import Category from "../../pages/Category";
@@ -15,23 +15,20 @@ function App() {
     <div>
       <DataProvider>
         <ThemeProvider>
-          {/* github pages doesn't work with BrowserRouter */}
-          <HashRouter>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/category" element={<SharedLayout />}>
-                {/**
-                 * overview, color and bg-color pages internal logic is different from other
-                 * categories that's why we don't render them using useParams hook
-                 */}
-                <Route path="overview" element={<Overview />} />
-                <Route path="color" element={<Color />} />
-                <Route path="bg-color" element={<BgColor />} />
-                <Route path=":id" element={<Category />} />
-              </Route>
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </HashRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/category" element={<SharedLayout />}>
+              {/**
+               * overview, color and bg-color pages internal logic is different from other
+               * categories that's why we don't render them using useParams hook
+               */}
+              <Route path="overview" element={<Overview />} />
+              <Route path="color" element={<Color />} />
+              <Route path="bg-color" element={<BgColor />} />
+              <Route path=":id" element={<Category />} />
+            </Route>
+            <Route path="*" element={<NotFound />} />
+          </Routes>
         </ThemeProvider>
       </DataProvider>
     </div>
