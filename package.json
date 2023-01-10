@@ -20,7 +20,8 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "prepare": "husky install",
-    "lint": "eslint . && prettier --check src/ ."
+    "lint": "eslint . && prettier --check src/ .",
+    "test:commit": "npm run test -- --watchAll=false"
   },
   "eslintConfig": {
     "extends": [
