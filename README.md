@@ -14,6 +14,27 @@ live demo: [https://daily-coder.github.io/stats/](https://daily-coder.github.io/
 
 <br />
 
+## NPM Modules
+
+- [AutoPrefixer](https://github.com/postcss/autoprefixer) - PostCSS plugin to parse CSS and add vendor prefixes to CSS rules using values from Can I Use.
+- [Bootstrap-icons](https://icons.getbootstrap.com) - Open source icons library from bootstrap.
+- [Commitlint](https://commitlint.js.org) - A tool checks if commit message meets the conventional commit format.
+- [Eslint](https://eslint.org/) - A pluggable linter to find and fix problems in your JavaScript code.
+- [Gh-pages](https://github.com/tschaub/gh-pages) - General purpose task for publishing files to a gh-pages branch on GitHub.
+- [Husky](https://typicode.github.io/husky) - Modern native git hooks made easy.
+- [Jest](https://jestjs.io) - A delightful JavaScript Testing Framework with a focus on simplicity.
+- [Lint-staged](https://github.com/okonet/lint-staged) - Run linters against staged git files.
+- [MSW](https://mswjs.io) - A seamless API mocking library for node and browser.
+- [PostCSS](https://github.com/postcss/postcss) - A tool for transforming styles with JS plugins.
+- [Prettier](https://prettier.io) - An opinionated code formatter.
+- [React](https://reactjs.org) - A JavaScript library for building user interfaces
+- [React-copy-to-clipboard](https://github.com/nkbt/react-copy-to-clipboard) - React copy to clipboard module.
+- [React-router](https://reactrouter.com) - A lightweight, fully-featured routing library for the React JavaScript library.
+- [React-testing-library](https://testing-library.com) - Simple and complete testing utilities that encourage good testing practices.
+- [TailwindCSS](https://tailwindcss.com) - A utility first framework.
+
+<br />
+
 ## Categories Of CSS Stats
 
 - Overview
