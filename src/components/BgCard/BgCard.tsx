@@ -1,8 +1,10 @@
-import propTypes from "prop-types";
-
 import CopyBtn from "../CopyBtn";
 
-function BgCard({ bgColor }) {
+interface BgCardProps {
+  bgColor: string;
+}
+
+function BgCard({ bgColor }: BgCardProps) {
   return (
     <div>
       <div
@@ -20,9 +22,5 @@ function BgCard({ bgColor }) {
     </div>
   );
 }
-
-BgCard.propTypes = {
-  bgColor: propTypes.string.isRequired,
-};
 
 export default BgCard;
