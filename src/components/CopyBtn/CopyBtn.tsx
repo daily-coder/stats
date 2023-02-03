@@ -1,8 +1,11 @@
-import propTypes from "prop-types";
 import { useEffect, useState } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
-function CopyBtn({ text }) {
+interface CopyBtnProps {
+  text: string;
+}
+
+function CopyBtn({ text }: CopyBtnProps) {
   const [copied, setCopied] = useState(false);
 
   useEffect(() => {
@@ -27,9 +30,5 @@ function CopyBtn({ text }) {
     </CopyToClipboard>
   );
 }
-
-CopyBtn.propTypes = {
-  text: propTypes.string.isRequired,
-};
 
 export default CopyBtn;
