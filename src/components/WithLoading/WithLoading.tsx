@@ -3,7 +3,7 @@ import { useDataContext } from "../DataProvider";
 import Error from "./Error";
 import Loading from "./Loading";
 
-function WithLoading(WrappedComponent) {
+function WithLoading(WrappedComponent: () => JSX.Element) {
   return function EnhancedComponent() {
     const { error, loading, cssData } = useDataContext();
 
