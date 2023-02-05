@@ -1,6 +1,11 @@
 import { createContext, useEffect, useState, useContext } from "react";
 
-const ThemeContext = createContext();
+interface ThemeContextType {
+  darkTheme: boolean;
+  setDarkTheme: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const ThemeContext = createContext<ThemeContextType | null>(null);
 
 export function useThemeContext() {
   const context = useContext(ThemeContext);
@@ -10,7 +15,11 @@ export function useThemeContext() {
   return context;
 }
 
-function ThemeProvider({ children }) {
+interface ThemeProvideProps {
+  children: React.ReactNode;
+}
+
+function ThemeProvider({ children }: ThemeProvideProps) {
   const [darkTheme, setDarkTheme] = useState(() => {
     return document.documentElement.classList.contains("dark");
   });
