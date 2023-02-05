@@ -1,4 +1,4 @@
-import { useRef, useEffect, useState } from "react";
+import { useRef, useEffect, useState, ChangeEvent } from "react";
 import { useNavigate } from "react-router-dom";
 
 import { useDataContext } from "../DataProvider";
@@ -10,10 +10,10 @@ function SearchBar() {
   // we will fetch new data whenever urlCount increments
   const [urlCount, setUrlCount] = useState(0);
   const navigate = useNavigate();
-  const inputRef = useRef();
+  const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
-    inputRef.current.focus();
+    inputRef.current?.focus();
   }, []);
 
   useEffect(() => {
@@ -52,12 +52,12 @@ function SearchBar() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [urlCount]);
 
-  function handleChange(ev) {
+  function handleChange(ev: ChangeEvent<HTMLInputElement>) {
     setSearchValue(ev.target.value);
   }
 
-  function loadCssDataOnEnter(ev) {
-    if (ev.target.value && ev.key === "Enter") {
+  function loadCssDataOnEnter(ev: React.KeyboardEvent<HTMLInputElement>) {
+    if (ev.currentTarget.value && ev.key === "Enter") {
       setUrlCount((prevUrlCount) => prevUrlCount + 1);
     }
   }
