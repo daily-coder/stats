@@ -1,8 +1,10 @@
-import propTypes from "prop-types";
-
 import CopyBtn from "../CopyBtn";
 
-function ColorCard({ color }) {
+interface ColorCardProps {
+  color: string;
+}
+
+function ColorCard({ color }: ColorCardProps) {
   return (
     <div>
       <div className="group relative flex h-28 cursor-default flex-col items-center justify-center rounded-md bg-white shadow-md dark:bg-slate-800">
@@ -19,9 +21,5 @@ function ColorCard({ color }) {
     </div>
   );
 }
-
-ColorCard.propTypes = {
-  color: propTypes.string.isRequired,
-};
 
 export default ColorCard;
