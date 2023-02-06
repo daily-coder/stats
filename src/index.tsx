@@ -8,7 +8,11 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import App from "./components/App";
 import reportWebVitals from "./reportWebVitals";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const rootElement = document.getElementById("root");
+if (!rootElement) {
+  throw new Error("Element with id of 'root' is not found");
+}
+const root = ReactDOM.createRoot(rootElement);
 root.render(
   <React.StrictMode>
     {/* github pages doesn't work with BrowserRouter */}
