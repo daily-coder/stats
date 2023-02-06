@@ -1,10 +1,12 @@
 import Card from "../components/Card";
 import { useDataContext } from "../components/DataProvider";
 import WithLoading from "../components/WithLoading";
+import { cssData } from "../types";
 
 function Overview() {
   const { cssData } = useDataContext();
-  const { stats } = cssData;
+  //  WithLoading prevents cssData as null
+  const { stats } = cssData as cssData;
 
   const overview = {
     "File Size": stats.humanizedSize,
