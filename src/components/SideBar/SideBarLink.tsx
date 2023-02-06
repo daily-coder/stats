@@ -1,7 +1,12 @@
-import propTypes from "prop-types";
 import { NavLink } from "react-router-dom";
 
-function SideBarLink({ to, linkText, hideMenu }) {
+interface SideBarLinkProps {
+  to: string;
+  linkText: string;
+  hideMenu(): void;
+}
+
+function SideBarLink({ to, linkText, hideMenu }: SideBarLinkProps) {
   return (
     <NavLink
       className="inline-block w-full cursor-pointer px-6 py-3 transition-all hover:bg-blue-800 hover:pl-7"
@@ -12,11 +17,5 @@ function SideBarLink({ to, linkText, hideMenu }) {
     </NavLink>
   );
 }
-
-SideBarLink.propTypes = {
-  to: propTypes.string.isRequired,
-  linkText: propTypes.string.isRequired,
-  hideMenu: propTypes.func.isRequired,
-};
 
 export default SideBarLink;
