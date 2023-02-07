@@ -4,14 +4,8 @@ import Card from "../components/Card";
 import { useDataContext } from "../components/DataProvider";
 import WithLoading from "../components/WithLoading";
 import PROPERTY_GROUP from "../property-group";
+import { hasOwnProperty } from "../typeUtils";
 import { cssData } from "../types";
-
-function hasOwnProperty<X extends object, Y extends PropertyKey>(
-  obj: X,
-  prop: Y
-): obj is X & Record<Y, string[]> {
-  return Object.hasOwnProperty.call(obj, prop);
-}
 
 function Category() {
   const { id } = useParams();
