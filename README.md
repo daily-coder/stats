@@ -32,6 +32,7 @@ live demo: [https://daily-coder.github.io/stats/](https://daily-coder.github.io/
 - [React-router](https://reactrouter.com) - A lightweight, fully-featured routing library for the React JavaScript library.
 - [React-testing-library](https://testing-library.com) - Simple and complete testing utilities that encourage good testing practices.
 - [TailwindCSS](https://tailwindcss.com) - A utility first framework.
+- [TypeScript](https://www.typescriptlang.org/) - A strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.
 
 <br />
 
